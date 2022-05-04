@@ -100,5 +100,6 @@ distancia = Math.sqrt(Math.pow(doublex1 - doublex2, 2) + Math.pow(doubley1 - dou
 JOptionPane.showMessageDialog("A distancia entre os pontos ("+x1+
         ","+y1+") e os pontos ("+x2+", "+y2+") é: "+distancia+);
 }
+ //Java string API 8
 }
 
