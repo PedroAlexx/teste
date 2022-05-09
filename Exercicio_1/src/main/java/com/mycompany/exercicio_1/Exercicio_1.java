@@ -36,7 +36,7 @@ public class Exercicio_1 {
         l2 = Math.sqrt(Math.pow(x2 - x3, 2) + Math.pow(y2 - y3, 2));
         l3 = Math.sqrt(Math.pow(x1 - x3, 2) + Math.pow(y1 - y3, 2));
         
-        if(l1 == l2 && l1 == l3 && l2 == l3){
+        if(l1.equals(l2) && l1 == l3 && l2 == l3){
             //JOptionPane.showMessageDialog("É equilátero");        }
         } else if( l1 == l2 | l1 == l3 | l2 == l3){
             //JOptionPane.showMessageDialog("É Isósceles");

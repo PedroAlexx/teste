@@ -5,6 +5,7 @@
 
 package com.mycompany.exercicio_2;
 import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 /**
  *
@@ -14,20 +15,33 @@ public class Exercicio_2 {
 
     public static void main(String[] args) {
         System.out.println("Olá! Insira um número para ser analisado:");
-
-        String numero;
-        int x;
+        int numero;
+        Scanner teclado = new Scanner(System.in);
+        String stringDivisores = "";
+        int x, divisores = 0;
+        numero = teclado.nextInt();
+//        numero = JOptionPane.showInputDialog("Insira o número aqui: ");
+//        x = Integer.parseInt(numero);
         
-        numero = JOptionPane.showInputDialog("Insira o número aqui: ");
-        x = Integer.parseInt(numero);
-        
-        int i = 1;
-        while( i < x){
-            if(x % i == 0)
-            {
-                System.out.println(""+i+" eh um divisor de "+x+".");
+//        int i = 1;
+//        while( i < x){
+//            if(x % i == 0)
+//            {
+//                System.out.println(""+i+" eh um divisor de "+x+".");
+//            }
+//            i = i + 1;        
+//        }
+        for(int i = 1; i <= numero; i++){
+            if(numero % i == 0) {
+                divisores++;
+                stringDivisores += ", " + i;
             }
-            i = i + 1;        
+        }
+        if(divisores > 2 || divisores == 1){
+            System.out.println("Os divisores sao " + stringDivisores);
+        }
+        else{
+            System.out.println("O valor eh primo");
         }
         
     }
