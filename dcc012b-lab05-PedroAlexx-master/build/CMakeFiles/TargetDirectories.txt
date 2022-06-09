@@ -1,0 +1,11 @@
+/ice/Downloads/dcc012b-lab05-PedroAlexx-master/build/CMakeFiles/test.dir
+/ice/Downloads/dcc012b-lab05-PedroAlexx-master/build/CMakeFiles/edit_cache.dir
+/ice/Downloads/dcc012b-lab05-PedroAlexx-master/build/CMakeFiles/rebuild_cache.dir
+/ice/Downloads/dcc012b-lab05-PedroAlexx-master/build/siga/CMakeFiles/siga.dir
+/ice/Downloads/dcc012b-lab05-PedroAlexx-master/build/siga/CMakeFiles/test.dir
+/ice/Downloads/dcc012b-lab05-PedroAlexx-master/build/siga/CMakeFiles/edit_cache.dir
+/ice/Downloads/dcc012b-lab05-PedroAlexx-master/build/siga/CMakeFiles/rebuild_cache.dir
+/ice/Downloads/dcc012b-lab05-PedroAlexx-master/build/tests/CMakeFiles/test_hash.dir
+/ice/Downloads/dcc012b-lab05-PedroAlexx-master/build/tests/CMakeFiles/test.dir
+/ice/Downloads/dcc012b-lab05-PedroAlexx-master/build/tests/CMakeFiles/edit_cache.dir
+/ice/Downloads/dcc012b-lab05-PedroAlexx-master/build/tests/CMakeFiles/rebuild_cache.dir
