@@ -4,99 +4,53 @@
  */
 
 package com.mycompany.calculadora;
-
 import java.util.Scanner;
-
 /**
  *
- * @author T-Gamer
+ * @author usuario
  */
 public class Calculadora {
-    
-    int memoria;
-    
-    public Calculadora() {
-        this.memoria = 0;
-    }
-    
+
     public static void main(String[] args) {
-        Calculadora calculadora = new Calculadora();
         Scanner teclado = new Scanner(System.in);
         
-        int opcao = 0;
-        
-        while(opcao != 6){
-            calculadora.imprimeMenu();
-            opcao = teclado.nextInt();
+        float x = 0, y;
+        String x_str, y_str, operacao = " ";
+        while(operacao != "close"){
+            System.out.println("Valor em memória: " + x);
+            System.out.println("Para sair, insira 0. Para continuar, insira a operação desejada: " );
+            operacao = teclado.nextLine();
+            if(operacao == "0"){
+                System.out.println("Saindo da operacao. ");
+                break;
+            }
+            System.out.println("Insira o numero para ser operacionalizado com a memória: ");
+            y_str = teclado.nextLine();
+            y = Float.parseFloat(y_str);
+            switch(operacao){
+                
+                case "+":                    
+                    x = x + y;
+                    break;
+                case "-":
+                    x = x - y;
+                    break;
+                case "*":
+                    x = x * y;
+                    break;
+                case "/":
+                    x = x / y;
+                    break;
+                
+                default:
+                     System.out.println("Operação inválida. Insira uma nova operação válida.");  
+                    break;
+            }
             
-            if(opcao == 1)
-                calculadora.soma();
-            else if(opcao == 2)
-                calculadora.subtracao();
-            else if(opcao == 3)
-                calculadora.multiplicacao();
-            else if(opcao == 4)
-                calculadora.divisao();
-            else if(opcao == 5)
-                calculadora.limparMemoria();
         }
-    }
-    
-    public void soma(){
         
-        int valor;
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Digite o valor a ser somado: ");
-        valor = teclado.nextInt();
         
-        this.memoria += valor;
-    }
-
-    public void subtracao(){
-        int valor;
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Digite o valor a ser subtraído: ");
-        valor = teclado.nextInt();
         
-        this.memoria -= valor;
-    }
-    public void multiplicacao() {
-        int valor;
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Digite o valor a ser multiplicado: ");
-        valor = teclado.nextInt();
-        
-        this.memoria *= valor;
-    }
-    public void divisao() {
-        int valor;
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Digite o valor a ser dividido: ");
-        valor = teclado.nextInt();
-        
-        this.memoria /= valor;
-    }
-    
-    public void limparMemoria(){
-        System.out.println("Limpando a memória....");
-        this.memoria = 0;
-    }
-    
-    public void imprimeMenu() {
-        System.out.println("Estado da memória: " + this.memoria);
-        System.out.println("Opções\n");
-        
-        System.out.println("(1) Somar");
-        System.out.println("(2) Subtrair");
-        System.out.println("(3) Multiplicar");
-        System.out.println("(4) Dividir");
-        System.out.println("(5) Limpar memória");
-        System.out.println("(6) Sair do programa\n");
-        
-        System.out.println("Qual opção você deseja? ");
-    }
-    
-
         
         
     }
